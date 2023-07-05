@@ -41,7 +41,7 @@ const Projects = () => {
   return (
       <m.div className='projects' exit={{opacity:0}}>
         <m.div onClick={e=>{setFirst(first===false)}} variants={devProps} whileHover='hover' initial={{x:1700,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:2,type:'tween'}} exit={{x:1700}} className='project'>
-          <m.h1>"Movies API"</m.h1>
+          <m.h1>&quot Movies API &quot</m.h1>
           <div className='imgContainer'>
             <Image src={allMovies} alt="FirstPic" className='img'/>
             <Image src={selectedMovie} alt="SecondPic" className='img'/>
@@ -50,7 +50,7 @@ const Projects = () => {
           {first===true && <div><p>{firstContent}</p><a href='https://github.com/alogsDiu/MoviesAPI'><BiLogoGithub className='icon'/></a></div>}
         </m.div>
         <m.div onClick={e=>{setSecond(second===false)}} variants={devProps} whileHover='hover'  initial={{x:-1700,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:2 ,type:'tween' , delay:0.5}} className='project'>
-          <m.h1>"2D Tanks Game"</m.h1>
+          <m.h1>&quot 2D Tanks Game &quot</m.h1>
           <div className='imgContainer'>
             <Image  src={opening} alt="FirstPic" className='img'/>
             <Image  src={gameProces} alt="SecondPic" className='img'/>
@@ -59,7 +59,7 @@ const Projects = () => {
           {second===true && <div><p>{secondContent}</p><a href='https://github.com/alogsDiu/TwoTanks'><BiLogoGithub className='icon'/></a></div>}
         </m.div>
         <m.div onClick={e=>{setThird(third===false)}} variants={devProps} whileHover='hover'  initial={{x:1700,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:2,type:'tween', delay:1}} className='project'>
-          <m.h1>"HtmlTestCreator"</m.h1>
+          <m.h1>&quot HtmlTestCreator &quot</m.h1>
           <div className='imgContainer'>
             <Image  src={incorrect} alt="FirstPic" className='img'/>
             <Image  src={correct} alt="SecondPic" className='img'/>
