@@ -4,7 +4,7 @@ import './contact.css';
 import { motion as m } from 'framer-motion';
 import { useForm, ValidationError } from '@formspree/react';
 
-const Contact = ({handleClose}:{handleClose:React.FC}) => {
+const Contact = () => {
     const [state, handleSubmit] = useForm("mdoroodj");
     return(
     <div>
