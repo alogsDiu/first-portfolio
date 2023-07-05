@@ -1,7 +1,7 @@
 'use client';
 import styles from './page.module.css';
 import {DiJava,DiJavascript1,DiHtml5,DiCss3Full,DiMongodb} from 'react-icons/di';
-import { motion,AnimatePresence } from 'framer-motion';
+import { motion} from 'framer-motion';
 
 
 export default function Home() {
@@ -9,7 +9,6 @@ export default function Home() {
   I am a junior dev looking forward to helping your company while gaining valuable experience along the way !
   `;
   return (
-  <AnimatePresence mode='wait' >
    <motion.main className={styles.main} exit={{opacity:0}}>
       <motion.div key={'hey'}  onAnimationComplete={()=>{document.getElementById('hey')?.remove()}}  whileHover={{scale:1.02}} transition={{duration:2, type:'tween'}} initial={{x:-1700,opacity:0}} animate={{x:0,opacity:1}} exit={{x:-1700 ,transition:{duration:2}}} className={styles.intro}><motion.h1 exit={{x:-1700}} className={styles.introText}>{introText}</motion.h1></motion.div>
       <div style={{display:'flex',width:"100%",marginTop:"5%"}}>
@@ -52,6 +51,5 @@ export default function Home() {
         </motion.div>
       </div>
     </motion.main>
-    </AnimatePresence>
   )
 }
