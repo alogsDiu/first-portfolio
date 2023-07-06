@@ -13,8 +13,8 @@ const Footer = () => {
       <motion.h5 variants={vars} whileHover='whileHover'>+7 777-137-84-20</motion.h5>
       <motion.h5 variants={vars} whileHover='whileHover'>sultanoverjan22@gmail.com</motion.h5>
       <div className="allIcons" >
-        <BiLogoInstagramAlt  className='icon' href='https://www.instagram.com/erzzhan_'/>
-        <BiLogoGithub className='icon' href='https://github.com/alogsDiu'/>
+        <a href='https://www.instagram.com/erzzhan_'><BiLogoInstagramAlt  className='icon' /></a>
+        <a href='https://github.com/alogsDiu'><BiLogoGithub className='icon' /></a>
       </div>
     </motion.div>
   )

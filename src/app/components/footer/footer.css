@@ -20,7 +20,7 @@ h5{
 .allIcons{
     display:flexbox;
 }
-.icon{
+a .icon{
     font-size: 250%;
     margin-left: 3%;
     cursor: pointer;
