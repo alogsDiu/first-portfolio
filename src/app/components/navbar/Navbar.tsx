@@ -15,7 +15,7 @@ const Navbar = () => {
     <motion.div className='navbar' transition={{duration:0.5}} initial={{opacity:0}} animate={{opacity:1}} >
         <motion.h1 className='name' transition={{duration:2 ,delay:1}} initial={{opacity:0}} animate={{opacity:1}} >Sultanov Yerzhan</motion.h1>
         <div className='linkContainer'>
-          <Link  href="    /" className='link'>
+          <Link  href="ortf/" className='link'>
             <motion.button initial={{opacity:0}}transition={{duration:1}} animate={{opacity:1}} variants={vars} whileHover='properties' >About</motion.button>
           </Link>
           <Link  href="/projects" className='link'>
