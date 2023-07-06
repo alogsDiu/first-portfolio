@@ -18,11 +18,7 @@ const Projects = () => {
   const [first,setFirst] = useState(false);
   const [second,setSecond] = useState(false);
   const [third,setThird] = useState(false);
-  const props = {properties:{
-    scale:1.1 ,
-    textShadow: '0px 0px 8px rgba(0,0,0,0)',
-    boxShadow :'0px 0px 8px rgba(0,0,0,0)'
-  }}
+  const projectNames=['"Movies API"','"2D Tanks Game"','"HtmlTestCreator"'];
   const devProps = {
     initial: {
       scale: 1,
@@ -41,7 +37,7 @@ const Projects = () => {
   return (
       <m.div className='projects' exit={{opacity:0}}>
         <m.div onClick={e=>{setFirst(first===false)}} variants={devProps} whileHover='hover' initial={{x:1700,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:2,type:'tween'}} exit={{x:1700}} className='project'>
-          <m.h1>&quot Movies API &quot</m.h1>
+          <m.h1>{projectNames[0]}</m.h1>
           <div className='imgContainer'>
             <Image src={allMovies} alt="FirstPic" className='img'/>
             <Image src={selectedMovie} alt="SecondPic" className='img'/>
@@ -50,7 +46,7 @@ const Projects = () => {
           {first===true && <div><p>{firstContent}</p><a href='https://github.com/alogsDiu/MoviesAPI'><BiLogoGithub className='icon'/></a></div>}
         </m.div>
         <m.div onClick={e=>{setSecond(second===false)}} variants={devProps} whileHover='hover'  initial={{x:-1700,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:2 ,type:'tween' , delay:0.5}} className='project'>
-          <m.h1>&quot 2D Tanks Game &quot</m.h1>
+          <m.h1>{projectNames[1]}</m.h1>
           <div className='imgContainer'>
             <Image  src={opening} alt="FirstPic" className='img'/>
             <Image  src={gameProces} alt="SecondPic" className='img'/>
@@ -59,7 +55,7 @@ const Projects = () => {
           {second===true && <div><p>{secondContent}</p><a href='https://github.com/alogsDiu/TwoTanks'><BiLogoGithub className='icon'/></a></div>}
         </m.div>
         <m.div onClick={e=>{setThird(third===false)}} variants={devProps} whileHover='hover'  initial={{x:1700,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:2,type:'tween', delay:1}} className='project'>
-          <m.h1>&quot HtmlTestCreator &quot</m.h1>
+          <m.h1>{projectNames[2]}</m.h1>
           <div className='imgContainer'>
             <Image  src={incorrect} alt="FirstPic" className='img'/>
             <Image  src={correct} alt="SecondPic" className='img'/>
