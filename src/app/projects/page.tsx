@@ -13,12 +13,16 @@ import hit from './static/hit.png';
 import incorrect from './static/inCorrect .png';
 import correct from './static/Correct.png';
 import questionFormat from './static/questionFormat.png';
+import oqigaProfile from './static/profile_oqiga.png';
+import oqigaLogin from './static/oqiga_login.png';
+import oqigaPartiesChat from './static/parties_chat.png';
+
 
 const Projects = () => {
   const [first,setFirst] = useState(false);
   const [second,setSecond] = useState(false);
   const [third,setThird] = useState(false);
-  const projectNames=['"Movies API"','"2D Tanks Game"','"HtmlTestCreator"'];
+  const projectNames=['"Movies API"','"2D Tanks Game"','"HtmlTestCreator"','"Oqiga"'];
   const devProps = {
     initial: {
       scale: 1,
@@ -34,10 +38,20 @@ const Projects = () => {
   const firstContent="Simple API for interacting with a MongoDB, fetching all the relevant data about movies, and allowing users to post reviews for a specific movie.";
   const secondContent='"TwoTanks" is a JavaFX game designed for two players. The game allows you to play on a single keyboard with intuitive controls. At the start of the game, you can enter your names and engage in an epic battle';
   const thirdContent="This app constructs basic test as a web page with instant check given that questions are provided in a certain format. A bit of history I observed my friend struggling to prepare for an upcoming test. She complained to me about the discomfort associated with test preparation (They had to pair up in order to construct tests for each other and check them manually) . Utilizing the limited knowledge I had at that time, I decided to create an HTML builder as it seemed like the most suitable format for the task at hand.";
+  const forthContent='Oqiga is a platform for finding and organizing parties written in Go using HTMX and Sqlite'
   return (
       <m.div className='projects' exit={{opacity:0}}>
         <m.div onClick={e=>{setFirst(first===false)}} variants={devProps} whileHover='hover' initial={{x:1700,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:2,type:'tween'}} exit={{x:1700}} className='project'>
-          <m.h1>{projectNames[0]}</m.h1>
+        <m.h1>{projectNames[3]}</m.h1>
+          <div className='imgContainer'>
+            <Image src={oqigaLogin} alt="FirstPic" className='img'/>
+            <Image src={oqigaProfile} alt="SecondPic" className='img'/>
+            <Image src={oqigaPartiesChat} alt="ThirdPic" className='img'/>
+          </div>
+          {first===true && <div><p>{forthContent}</p><a href='https://github.com/alogsDiu/oqiga'><BiLogoGithub className='icon'/></a></div>}
+        </m.div>
+        <m.div onClick={e=>{setFirst(first===false)}} variants={devProps} whileHover='hover' initial={{x:1700,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:2,type:'tween'}} exit={{x:1700}} className='project'>
+        <m.h1>{projectNames[0]}</m.h1>
           <div className='imgContainer'>
             <Image src={allMovies} alt="FirstPic" className='img'/>
             <Image src={selectedMovie} alt="SecondPic" className='img'/>
@@ -67,4 +81,4 @@ const Projects = () => {
   )
 }
 
-export default Projects;
+export default Projects;3

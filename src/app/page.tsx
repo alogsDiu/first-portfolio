@@ -1,6 +1,6 @@
 'use client';
 import styles from './page.module.css';
-import {DiJava,DiJavascript1,DiHtml5,DiCss3Full,DiMongodb} from 'react-icons/di';
+import {DiJava,DiJavascript1,DiHtml5,DiPostgresql,DiGo} from 'react-icons/di';
 import { motion,AnimatePresence } from 'framer-motion';
 
 
@@ -16,6 +16,10 @@ export default function Home() {
           <h1>Technical skills:</h1>
           <div className={styles.iconsSet}>
             <div className={styles.iconDiv}>
+              <DiGo className={styles.icon}color='#000000'style={{fontWeight:'bold'}}/>
+              <h2>GO</h2>
+            </div>
+            <div className={styles.iconDiv}>
               <DiJava className={styles.icon}color='#000000'style={{fontWeight:'bold'}}/>
               <h2>JAVA</h2>
             </div>
@@ -28,16 +32,12 @@ export default function Home() {
               <h2>HTML</h2>
             </div>
             <div className={styles.iconDiv}>
-              <DiCss3Full className={styles.icon}color='#000000'/>
-              <h2>CSS</h2>
-            </div>
-            <div className={styles.iconDiv}>
-              <DiMongodb className={styles.icon}color='#000000'/>
-              <h2>MongoDB</h2>
+              <DiPostgresql className={styles.icon}color='#000000'/>
+              <h2>PostgreSQL</h2>
             </div>
           </div>
           <h2 className={styles.additional}>- Solid understanding of algorithms</h2>
-          <h2 className={styles.additional}>- Having a grasp on the MVC pattern</h2>
+          <h2 className={styles.additional}>- Knowledge of patterns(MVC,Layered)</h2>
           <h2 className={styles.additional}>- Familiarity with mainstream frameworks/libraries</h2>
         </motion.div>
         <motion.div  whileHover={{scale:1.02}} transition={{duration:2, type:'tween'}}  initial={{x:800,opacity:0}} animate={{x:0,opacity:1}} exit={{x:800}} className={styles.personal}>
