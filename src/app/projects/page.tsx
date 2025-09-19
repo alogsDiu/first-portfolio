@@ -46,7 +46,7 @@ const Projects = () => {
   return (
       <m.div className='projects' exit={{opacity:0}}>
         <m.div onClick={e=>{setFirst(first===false)}} variants={devProps} whileHover='hover' initial={{x:1700,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:2,type:'tween'}} exit={{x:1700}} className='project'>
-        <m.h1>{projectNames[3]}</m.h1>
+        <m.h1>{projectNames[4]}</m.h1>
           <div className='imgContainer'>
             <Image src={cart} alt="FirstPic" className='img'/>
             <Image src={check} alt="SecondPic" className='img'/>
