@@ -1,12 +1,12 @@
 'use client';
 import styles from './page.module.css';
-import {DiJava,DiJavascript1,DiHtml5,DiPostgresql,DiGo} from 'react-icons/di';
+import {DiJava,DiJavascript1,DiHtml5,DiPostgresql,DiGo, DiPython} from 'react-icons/di';
 import { motion,AnimatePresence } from 'framer-motion';
 
 
 export default function Home() {
-  const introText : String = `Hello ! 
-  I am a junior dev looking forward to helping your company while gaining valuable experience along the way !
+  const introText : String = `Привет! 
+  Я разраб, который любит создавать надежные и эффективные системы. Мне нравится постоянно учиться и быстро адаптироваться к новым технологиям. Я готов внести свой вклад в вашу команду.
   `;
   return (
    <motion.main className={styles.main} exit={{opacity:0}}>
@@ -16,20 +16,12 @@ export default function Home() {
           <h1>Technical skills:</h1>
           <div className={styles.iconsSet}>
             <div className={styles.iconDiv}>
-              <DiGo className={styles.icon}color='#000000'style={{fontWeight:'bold'}}/>
-              <h2>GO</h2>
-            </div>
-            <div className={styles.iconDiv}>
               <DiJava className={styles.icon}color='#000000'style={{fontWeight:'bold'}}/>
               <h2>JAVA</h2>
             </div>
             <div className={styles.iconDiv}>
-              <DiJavascript1 className={styles.icon}color='#000000'/>
-              <h2>JAVASCRIPT</h2>
-            </div>
-            <div className={styles.iconDiv}>
-              <DiHtml5 className={styles.icon}color='#000000'/>
-              <h2>HTML</h2>
+              <DiPython className={styles.icon}color='#000000'style={{fontWeight:'bold'}}/>
+              <h2>Python</h2>
             </div>
             <div className={styles.iconDiv}>
               <DiPostgresql className={styles.icon}color='#000000'/>
