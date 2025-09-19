@@ -26,7 +26,7 @@ const Projects = () => {
   const [second,setSecond] = useState(false);
   const [third,setThird] = useState(false);
   const [fourth, setFourth] = useState(false);
-  const projectNames=['"Movies API"','"2D Tanks Game"','"HtmlTestCreator"','"Oqiga"'];
+  const projectNames=['"Movies API"','"2D Tanks Game"','"HtmlTestCreator"','"Oqiga"','"foodOrderingSystem"'];
   const devProps = {
     initial: {
       scale: 1,
